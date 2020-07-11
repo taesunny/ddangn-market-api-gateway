@@ -13,8 +13,8 @@ zuul:
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   routes:
     product-service:
-      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      sensitiveHeaders:
       path: /api/v1/**
     app-server:
-      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      sensitiveHeaders:
       path: /api/v1/**
