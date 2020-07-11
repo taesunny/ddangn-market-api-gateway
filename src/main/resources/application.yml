@@ -11,10 +11,10 @@ eureka:
     instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
 zuul:
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  ignore-security-headers: false
+  sensitiveHeaders:
   routes:
     product-service:
-      sensitiveHeaders:
       path: /api/v1/**
     app-server:
-      sensitiveHeaders:
       path: /api/v1/**
