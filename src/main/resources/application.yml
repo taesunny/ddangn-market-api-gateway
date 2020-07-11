@@ -13,6 +13,9 @@ zuul:
   ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
   ignore-security-headers: false
   sensitiveHeaders:
+  host:
+    connect-timeout-millis: 600000
+    socket-timeout-millis: 600000
   routes:
     product-service:
       path: /api/v1/**
