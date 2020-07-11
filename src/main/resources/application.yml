@@ -13,3 +13,5 @@ zuul:
   routes:
     product-service:
       path: /api/v1/**
+    app-server:
+      path: /api/v1/**
