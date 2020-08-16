@@ -21,6 +21,8 @@ zuul:
       path: /api/v1/**
     app-server:
       path: /api/v1/**
+    chatting-server:
+      path: /**
   ribbon:
     eager-load:
       enabled: true
